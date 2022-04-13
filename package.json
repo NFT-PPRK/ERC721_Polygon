@@ -1,22 +1,33 @@
 {
   "name": "nft-polygon-tutorial2",
   "version": "1.0.0",
-  "description": "",
+  "description": "youngwoo, yongkwan's nft task using polygon chain",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "youngwoo ji, yongkwan cho",
   "license": "ISC",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.5",
     "@nomiclabs/hardhat-etherscan": "^3.0.3",
-    "ethers": "^5.0.0",
-    "hardhat": "^2.9.3",
+    "ethers": "^5.6.2",
+    "hardhat": "^2.1.2",
     "node-fetch": "^2.6.7"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^4.5.0",
     "dotenv": "^16.0.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NFT-PPRK/NFT-Polygon.git"
+  },
+  "keywords": [
+    "polygon"
+  ],
+  "bugs": {
+    "url": "https://github.com/NFT-PPRK/NFT-Polygon/issues"
+  },
+  "homepage": "https://github.com/NFT-PPRK/NFT-Polygon#readme"
 }

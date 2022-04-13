@@ -12,7 +12,9 @@ const { ALCHEMY_KEY, ACCOUNT_PRIVATE_KEY, POLYGONSCAN_API_KEY } = process.env;
 
 module.exports = {
    solidity: "0.8.1",
-   defaultNetwork: "maticmum",
+
+   defaultNetwork: "maticmum", // polygon mumbai
+
    networks: {
     hardhat: {},
     "maticmum": {
@@ -26,6 +28,7 @@ module.exports = {
       accounts: [`0x${ACCOUNT_PRIVATE_KEY}`]
     },
   },
+  
   etherscan: {
     apiKey : POLYGONSCAN_API_KEY,
   },
