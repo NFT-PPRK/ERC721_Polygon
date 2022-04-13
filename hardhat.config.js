@@ -6,8 +6,9 @@ require('dotenv').config();
 require("@nomiclabs/hardhat-ethers");
 require("./scripts/deploy.js");
 require("./scripts/mint.js");
+require("@nomiclabs/hardhat-etherscan");
 
-const { ALCHEMY_KEY, ACCOUNT_PRIVATE_KEY } = process.env;
+const { ALCHEMY_KEY, ACCOUNT_PRIVATE_KEY, POLYGONSCAN_API_KEY } = process.env;
 
 module.exports = {
    solidity: "0.8.1",
@@ -26,6 +27,6 @@ module.exports = {
     },
   },
   etherscan: {
-    apiKey : ETHERSCAN_API_KEY,
+    apiKey : POLYGONSCAN_API_KEY,
   },
 }
