@@ -2,6 +2,7 @@ const { task } = require("hardhat/config");
 const { getContract } = require("./helpers");
 const fetch = require("node-fetch");
 
+// 1. mint
 task("mint", "Mints from the NFT contract")
 .addParam("address", "The address to receive a token")
 .setAction(async function (taskArguments, hre) {
@@ -12,6 +13,7 @@ task("mint", "Mints from the NFT contract")
     console.log(`Transaction Hash: ${transactionResponse.hash}`);
 });
 
+// 2. set base token uri
 task("set-base-token-uri", "Sets the base token URI for the deployed smart contract")
 .addParam("baseUrl", "The base of the tokenURI endpoint to set")
 .setAction(async function (taskArguments, hre) {
@@ -22,7 +24,7 @@ task("set-base-token-uri", "Sets the base token URI for the deployed smart contr
     console.log(`Transaction Hash: ${transactionResponse.hash}`);
 });
 
-
+// 3. token uri
 task("token-uri", "Fetches the token metadata for the given token ID")
 .addParam("tokenId", "The tokenID to fetch metadata for")
 .setAction(async function (taskArguments, hre) {
